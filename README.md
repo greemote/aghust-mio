@@ -7,4 +7,4 @@ date: 15.06.2022
 
 prepareData.m should be used to generate the proper matrix from the .csv file for the net, though it takes a lot of time - better use already created data stored in preppedData.mat  
 learn.m teaches the network and plots the results  
-use analyzeResults.m to calculate accuracy etc.
+use analyzeResults.m to calculate the accuracy etc.
