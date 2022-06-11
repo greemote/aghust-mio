@@ -12,7 +12,9 @@ preppedData1 = preppedData;
 idx0 = length(preppedData1(1, :)) - 6;
 
 idx = preppedData1(:, idx0 + 6) == -Inf;
-preppedData1(idx, idx0 + 6) = 0;
+preppedData1(idx, :) = [];
+idx = preppedData1(:, idx0 + 6) == 0;
+preppedData1(idx, :) = [];
 
 % create partition
 cvp = cvpartition(size(preppedData1,1),'HoldOut',0.2);
