@@ -9,3 +9,4 @@
 clc;
 
 Accuracy = 100. - (abs(Difference ./ dataTest(:, idx0 + 6))) * 100.;
+mean(Accuracy)
