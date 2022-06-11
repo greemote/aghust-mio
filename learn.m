@@ -9,7 +9,7 @@ clc;
 
 % get and fix the prepared data
 preppedData1 = preppedData;
-idx0 = length(mostPopularWords);
+idx0 = length(preppedData1(1, :)) - 6;
 
 idx = preppedData1(:, idx0 + 6) == -Inf;
 preppedData1(idx, idx0 + 6) = 0;
