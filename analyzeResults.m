@@ -20,7 +20,7 @@ tbl = [tbl1 tbl2];
 rng('default');
 mdl = fitrkernel(tbl, 'retweets', 'CategoricalPredictors', 'all');
 
-queryPoint = tbl(8469, :);
+queryPoint = tbl(1, :);
 explainer = shapley(mdl, tbl, 'QueryPoint', queryPoint, 'UseParallel', true);
 explainer.ShapleyValues
 plot(explainer);
